@@ -1,0 +1,16 @@
+@font-face
+{
+    font-family: 'determinationmonoweb-webfont';
+  src: url('determinationmonoweb-webfont.eot');
+      url('determinationmonoweb-webfont.eot?#') format('embedded-opentype'),
+      url('determinationmonoweb-webfont.woff') format('woff'),
+      url('determinationmonoweb-webfont.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'determinationsansweb-webfont';
+  src: url('determinationsansweb-webfont.eot');
+      url('determinationsansweb-webfont.eot?#') format('embedded-opentype'),
+      url('determinationsansweb-webfont.woff') format('woff'),
+      url('determinationsansweb-webfont.ttf') format('truetype');
+}

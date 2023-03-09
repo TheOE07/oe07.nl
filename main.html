@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OE07 - Main </title>
+
+    </script>
+	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script>
+      $(document).ready(function () {
+          // Hide the div
+          $("#boo").hide();
+          // Show the div after 5s
+          $("#boo").delay(5000).fadeIn(0);  
+      });    
+    </script>
+	<script type="text/javascript">
+    // <![CDATA[
+    var speed=75; // speed of wobbling, lower is faster
+    var height=1; // height of wobbling in pixels
+    var alink=""; // page to link text to (set to ="" for no link)
+
+    /****************************
+    *    Wobbly Text Effect     *
+    *(c) 2003-6 mf2fm web-design*
+    *  http://www.mf2fm.com/rv  *
+    * DON'T EDIT BELOW THIS BOX *
+    ****************************/
+    var wobtxt, wobble, wobcnt=0;
+    window.onload=function() { if (document.getElementById) {
+    var i, wobli;
+    wobble=document.getElementById("wobble");
+    wobtxt=wobble.firstChild.nodeValue;
+    while (wobble.childNodes.length) wobble.removeChild(wobble.childNodes[0]);
+    for (i=0; i<wobtxt.length; i++) {
+    wobli=document.createElement("span");
+    wobli.setAttribute("id", "wobb"+i);
+    wobli.style.position="relative";
+    wobli.appendChild(document.createTextNode(wobtxt.charAt(i)));
+    if (alink) {
+    wobli.style.cursor="pointer";
+    wobli.onclick=function() { top.location.href=alink; }
+    }
+    wobble.appendChild(wobli);
+    }
+    setInterval("wobbler()", speed);
+    }}
+
+    function wobbler() {
+    for (var i=0; i<wobtxt.length; i++) document.getElementById("wobb"+i).style.top=Math.round(height*Math.sin(i+wobcnt))+"px"
+    wobcnt++;
+    }
+    // ]]>
+    </script>
+	
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="style.css" charset="utf-8">
+	<style>
+	  
+	  @font-face{ 
+        font-family: '8bitoperator';
+        src: url('fonts/8bitoperator/8bitoperator.woff2') format('woff2'),
+        url('fonts/8bitoperator/8bitoperator.woff') format('woff');
+      }
+
+	  body {
+        font-family: '8bitoperator', Arial, sans-serif;
+		width: 710px;
+	  }
+	  
+	  .container1 {
+        white-space: nowrap;
+        background-color: #000000;
+        border-style: solid;
+        border-width: 6px;
+        border-color: #FFFFFF;
+        font-size: 25px;
+        min-height: 100%;
+        max-height: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .container2 {
+        padding-top: 5px;
+        font-size: 20px;
+      }
+
+      .container3 {
+        padding-top: 10px;
+        text-align: center;
+      }
+
+	  .typewriter p {
+        overflow: hidden;
+        white-space: nowrap;
+        animation: 
+        typing 3s steps(40, end),
+        blink-caret .75s step-end infinite;
+		
+		font-size: 25px;
+		padding-top: -5px;
+        padding-left: 10px;
+		padding-right: 10px;
+		overflow: hidden;
+      }
+
+      @keyframes typing {
+        from { width: 0% }
+        to { width: 100% }
+      }
+	  
+	  img {
+        image-rendering: pixelated;
+      }
+	  
+	</style>
+  </head>
+  <body>
+    <br>
+    <center>
+	  <img src="main/napstablook.webp" height="300px" style="margin-top: 5px;">
+	  <span id="boo" style="margin-top: 50px; margin-left: 30px; padding-left: 35px; padding-top: 5px; width: 265px; height: 104px; background-image: url('main/bubble.gif'); background-repeat: no-repeat; display: none; vertical-align: top; position: absolute; color: black; font-size: 15px; text-align: left;"/>
+	    <span>zzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzz.....</span>
+	  </span>
+	  </center>
+	<div class="container1">
+	  <div class="typewriter">
+	    <p>* Napstablook is pretending to sleep.</p>
+      </div>
+	  <br><br>
+	</div>
+	<div class="container2">
+	  CHARA&nbsp;&nbsp;&nbsp;LV 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4px"><b>HP </b><mark>&nbsp;&nbsp;&nbsp;&nbsp;</mark></font> 20 / 20
+	</div>
+	<div class="container3">
+	<a href="about.html" target="_parent"><img src="main/menu/about.gif" width="150px" onmouseover="this.src='main/menu/about_sel.gif'" 
+	  onmouseout="this.src='main/menu/about.gif'"></a>
+	  &nbsp;&nbsp;
+	  <a href="blog.html" target="_parent"><img src="main/menu/blog.gif" width="150px" onmouseover="this.src='main/menu/blog_sel.gif'" 
+	  onmouseout="this.src='main/menu/blog.gif'"></a>
+	  &nbsp;&nbsp;
+	  <a href="stuff.html" target="_parent"><img src="main/menu/stuff.gif" width="150px" onmouseover="this.src='main/menu/stuff_sel.gif'" 
+	  onmouseout="this.src='main/menu/stuff.gif'"></a>
+	  &nbsp;&nbsp;
+	<a href="links.html" target="_parent"><img src="main/menu/links.gif" width="150px" onmouseover="this.src='main/menu/links_sel.gif'" 
+	  onmouseout="this.src='main/menu/links.gif'"></a>
+	</div>
+    <center><a href="index.html"><span id="heart">GO BACK</span></a></center>
+  </body>
+</html>
