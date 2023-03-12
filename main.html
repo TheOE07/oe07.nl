@@ -2,8 +2,7 @@
 <html>
   <head>
     <title>OE07 - Main </title>
-
-    </script>
+    <script src="script10.js"></script>
 	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
     <script>
       $(document).ready(function () {
@@ -51,7 +50,7 @@
     }
     // ]]>
     </script>
-	
+	<script src="bossscript.js"></script>
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="style.css" charset="utf-8">
 	<style>
@@ -91,7 +90,6 @@
       }
 
 	  .typewriter p {
-        overflow: hidden;
         white-space: nowrap;
         animation: 
         typing 3s steps(40, end),
@@ -118,14 +116,15 @@
   <body>
     <br>
     <center>
-	  <img src="main/napstablook.webp" height="300px" style="margin-top: 5px;">
+	  <!--<img src="main/napstablook.webp" height="300px" style="margin-top: 5px;">-->
+      <img id="myPicture" height="300px" style="margin-top: 5px;">
 	  <span id="boo" style="margin-top: 50px; margin-left: 30px; padding-left: 35px; padding-top: 5px; width: 265px; height: 104px; background-image: url('main/bubble.gif'); background-repeat: no-repeat; display: none; vertical-align: top; position: absolute; color: black; font-size: 15px; text-align: left;"/>
 	    <span>zzzzzzzzzzzzzzzzzzzzzz zzzzzzzzzzzz.....</span>
 	  </span>
 	  </center>
 	<div class="container1">
 	  <div class="typewriter">
-	    <p>* Napstablook is pretending to sleep.</p>
+	    <p id="textflav">* Napstablook is pretending to sleep.</p>
       </div>
 	  <br><br>
 	</div>

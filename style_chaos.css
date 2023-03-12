@@ -1,0 +1,38 @@
+@font-face{
+	font-family: 'Determination';
+	src: url('fonts/Determination/determinationmonoweb-webfont.ttf') format('truetype');
+}
+
+
+
+nav {
+background-color: #000000;
+border: 6px solid;
+border-color: #FFFFFF;
+font-size: 25px;
+padding: 15px;
+margin-top: 15px;
+margin-bottom: 15px;
+text-align:center;
+color:white;
+}
+
+main {
+background-color: #000000;
+border: 6px solid;
+border-color: #FFFFFF;
+font-size: 25px;
+padding: 10px;
+margin-bottom: 15px;
+}
+
+a:link {color: #BFBFBF; text-decoration: none}
+
+a:hover {color: #FFFFFF;}
+
+a:visited {color: #BFBFBF;}
+
+a:hover:visited {color: #FFFFFF;}
+
+#heart:before {content: "♥"; color: black; letter-spacing: 3px;} 
+#heart:hover:before {content: "♥"; color: red; letter-spacing: 3px;}
