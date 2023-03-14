@@ -39,7 +39,7 @@ function bosses() {
     }else if  (myPix[randomNum] === "main/asriel.webp"){
         document.getElementById("textflav").innerHTML = "* It's the end. ";
         document.getElementById("boo").innerHTML = "Urah ha ha... Behold my TRUE power!";
-        document.getElementById("musics").src = "https://static.wikia.nocookie.net/undertale/images/5/5b/SAVE_the_World_music.ogg";
+        document.getElementById("musics").src = "https://static.wikia.nocookie.net/undertale/images/5/5b/SAVE_the_World_music.ogg/revision/latest?cb=20160401054436";
     }
     else {
         document.getElementById("textflav").innerHTML = "error - what.";
